@@ -19,5 +19,5 @@ Config should allow to specify for each operation (+, -, *, /):
 Other requirements:
 - [ ] /: numA/numB should be a whole number
 - [ ] all: exclude `10**n` numbers
-- [ ] all: in numA_op_numB; numA > numB
+- [ ] /, -: in numA_op_numB; numA > numB
 - [ ] tests
