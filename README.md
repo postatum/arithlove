@@ -1,14 +1,14 @@
 # arithlove
 Arithmetic training tool
 
-## Install:
+## Install
 ```
 git clone https://github.com/postatum/arithlove.git
 cd arithlove
 pip install .
 ```
 
-## Run:
+## Run
 ```
 arithlove path_to_conf.json
 ```
