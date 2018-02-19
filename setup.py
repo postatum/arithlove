@@ -10,13 +10,13 @@ requires = [
 ]
 
 setup(
-    name='Arithain',
+    name='Arithlove',
     version=VERSION,
-    description='Arithmetic training tool',
+    description='Arithmetic training tool that <3 you',
     long_description=README,
     author='Artem Kostiuk',
     author_email='postatum@gmail.com',
-    url='https://github.com/postatum/arithain',
+    url='https://github.com/postatum/arithlove',
     license='MIT',
     install_requires=requires,
     tests_require=requires,
@@ -30,7 +30,7 @@ setup(
     packages=find_packages(),
     entry_points={
       'console_scripts': [
-          'arithain = arithain.__main__:main'
+          'arithlove = arithlove.__main__:main'
       ]
     }
 )

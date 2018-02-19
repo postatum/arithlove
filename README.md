@@ -1,4 +1,4 @@
-# arithain
+# arithlove
 Arithmetic training tool
 
 
