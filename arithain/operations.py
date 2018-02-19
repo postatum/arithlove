@@ -8,8 +8,12 @@ class Operation:
     def prepareArgs(self, x, y):
         return x, y
 
-    def isValid(self, inp):
-        self.result = self.run(self.x, self.y)
+    def isCorrect(self, inp):
+        self.result = int(self.run(self.x, self.y))
+        try:
+            inp = int(inp)
+        except ValueError:
+            return False
         return self.result == inp
 
     def run(self, x, y):
@@ -52,7 +56,8 @@ class Division(Operation):
     def prepareArgs(self, x, y):
         if y > x:
             x, y = y, x
-        # TODO: numA/numB should be a whole number
+        if x % y != 0:
+            x += (y - x % y)
         return x, y
 
     def run(self, x, y):
