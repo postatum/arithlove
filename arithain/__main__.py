@@ -1,9 +1,7 @@
-import sys
-
+from . import tool
 
 def main():
-    print(sys.argv[1:])
-
+    tool.TrainingTool().run()
 
 if __name__ == "__main__":
     main()

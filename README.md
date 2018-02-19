@@ -3,8 +3,8 @@ Arithmetic training tool
 
 
 Should work like (for user):
-[ ] 1. Run with config file arg
-[ ] 2. Interactive shell starts
+[x] 1. Run with config file arg
+[x] 2. Interactive shell starts
 [ ] 3. Random task is output (E.g. "2+2")
 [ ] 4. User types the answer, presses Enter
 [ ] 5. It correct, it is somehow reported in green; Go to 3
@@ -19,5 +19,5 @@ Config should allow to specify for each operation (+, -, *, /):
 Other requirements:
 - [ ] /: numA/numB should be a whole number
 - [ ] all: exclude `10**n` numbers
-- [ ] /, -: in numA_op_numB; numA > numB
+- [x] /, -: in numA_op_numB; numA > numB
 - [ ] tests
