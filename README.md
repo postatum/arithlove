@@ -1,11 +1,9 @@
 # arithlove
-Arithmetic training tool
+Arithmetic training tool.
 
 ## Install
 ```
-git clone https://github.com/postatum/arithlove.git
-cd arithlove
-pip install .
+pip install git+https://github.com/postatum/arithlove.git
 ```
 
 ## Run
@@ -17,6 +15,9 @@ E.g. from `arithlove` project folder run:
 ```
 arithlove example/conf.json
 ```
+
+Type the answer (or don't) and press Enter to submit it.
+Press `Ctrl+C` to exit.
 
 ## Config
 Config JSON format is:
