@@ -17,6 +17,7 @@ arithlove example/conf.json
 ```
 
 Type the answer (or don't) and press Enter to submit it.
+
 Press `Ctrl+C` to exit.
 
 ## Config
