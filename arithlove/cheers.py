@@ -3,7 +3,7 @@
 
 import random
 
-cheers = [
+CHEERS = [
     "Great!",
     "Phenomenal!",
     "Superb!",
@@ -141,5 +141,5 @@ cheers = [
     "Yes!"
 ]
 
-def randomCheer():
-    return random.choice(cheers)
+def random_cheer():
+    return random.choice(CHEERS)

@@ -3,12 +3,12 @@ class Operation:
     sign = ''
 
     def __init__(self, x, y):
-        self.x, self.y = self.prepareArgs(x, y)
+        self.x, self.y = self.prepare_args(x, y)
 
-    def prepareArgs(self, x, y):
+    def prepare_args(self, x, y):
         return x, y
 
-    def isCorrect(self, inp):
+    def is_correct(self, inp):
         self.result = int(self.run(self.x, self.y))
         try:
             inp = int(inp)
@@ -32,7 +32,7 @@ class Difference(Operation):
     default = (2, 2)
     sign = '-'
 
-    def prepareArgs(self, x, y):
+    def prepare_args(self, x, y):
         if y > x:
             x, y = y, x
         return x, y
@@ -53,7 +53,7 @@ class Division(Operation):
     default = (2, 1)
     sign = '/'
 
-    def prepareArgs(self, x, y):
+    def prepare_args(self, x, y):
         if y > x:
             x, y = y, x
         if x % y != 0:

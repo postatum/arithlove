@@ -1,4 +1,4 @@
-from . import tool
+from arithlove import tool
 
 def main():
     tool.TrainingTool().run()
