@@ -1,9 +1,13 @@
+import operator
+
+
 class Operation:
     default = ()
     sign = ''
 
     def __init__(self, x, y):
         self.x, self.y = self.prepare_args(x, y)
+        self.result = None
 
     def prepare_args(self, x, y):
         return x, y
@@ -23,35 +27,30 @@ class Operation:
 class Sum(Operation):
     default = (2, 2)
     sign = '+'
-
-    def run(self, x, y):
-        return x + y
+    run = operator.add
 
 
 class Difference(Operation):
     default = (2, 2)
     sign = '-'
+    run = operator.sub
 
     def prepare_args(self, x, y):
         if y > x:
             x, y = y, x
         return x, y
 
-    def run(self, x, y):
-        return x - y
-
 
 class Multiplication(Operation):
     default = (2, 2)
     sign = '*'
-
-    def run(self, x, y):
-        return x * y
+    run = operator.mul
 
 
 class Division(Operation):
     default = (2, 1)
     sign = '/'
+    run = operator.truediv
 
     def prepare_args(self, x, y):
         if y > x:
@@ -59,9 +58,6 @@ class Division(Operation):
         if x % y != 0:
             x += (y - x % y)
         return x, y
-
-    def run(self, x, y):
-        return x / y
 
 
 OPERATIONS = {
