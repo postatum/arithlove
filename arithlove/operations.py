@@ -1,11 +1,12 @@
 import operator
 
 
-class Operation:
+class Operation(object):
     default = ()
     sign = ''
 
-    def __init__(self, x, y):
+    def __init__(self, x, y, *args, **kwargs):
+        super().__init__(*args, **kwargs)
         self.x, self.y = self.prepare_args(x, y)
         self.result = None
 

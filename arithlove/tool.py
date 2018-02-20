@@ -8,7 +8,7 @@ from arithlove import cheers
 from arithlove import operations as ops
 
 
-class TrainingTool:
+class TrainingTool(object):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         parser = argparse.ArgumentParser(
