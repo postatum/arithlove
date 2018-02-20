@@ -3,6 +3,7 @@
 
 import random
 
+
 CHEERS = [
     "Great!",
     "Phenomenal!",
@@ -140,6 +141,7 @@ CHEERS = [
     "It's A Masterpiece!",
     "Yes!"
 ]
+
 
 def random_cheer():
     return random.choice(CHEERS)

@@ -1,13 +1,11 @@
 import os
 from setuptools import setup, find_packages
 
+
 here = os.path.abspath(os.path.dirname(__file__))
 README = open(os.path.join(here, 'README.md')).read()
 VERSION = open(os.path.join(here, 'VERSION')).read()
 
-requires = [
-
-]
 
 setup(
     name='Arithlove',
@@ -18,8 +16,6 @@ setup(
     author_email='postatum@gmail.com',
     url='https://github.com/postatum/arithlove',
     license='MIT',
-    install_requires=requires,
-    tests_require=requires,
     classifiers=[
         'Intended Audience :: Education',
         'Intended Audience :: Science/Research',
