@@ -1,5 +1,8 @@
 # arithlove
-Arithmetic training tool.
+Arithmetic training tool that loves you.
+
+![Logo](screen.png)
+
 
 ## Install
 ```
